@@ -2,9 +2,10 @@
 @import url(https://fonts.googleapis.com/css?family=Comfortaa);
 @import url(https://fonts.googleapis.com/css?family=Exo);
 @import url(https://fonts.googleapis.com/css?family=Cairo);
+@import url(https://fonts.googleapis.com/css?family=Pontano+Sans);
 
 body {
-    font-family: "Cairo";
+    font-family: "Pontano Sans";
     display: flex;
     flex-flow: row wrap;
     margin: 0;
