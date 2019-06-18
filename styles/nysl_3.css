@@ -1,0 +1,169 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Comfortaa);
+@import url(https://fonts.googleapis.com/css?family=Exo);
+@import url(https://fonts.googleapis.com/css?family=Cairo);
+
+body {
+    font-family: "Cairo";
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+}
+
+body > * {
+  flex: 1 100%;
+}
+
+main {
+    margin-right: 32px;
+    text-align: justify;
+}
+
+td {
+    vertical-align: baseline;
+}
+
+.date {
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin-left: 80px;
+    margin-bottom: 0px;
+    font-size: 34px;
+}
+
+nav {
+    position: absolute;
+    top: 41px;
+    left: 250px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav ul {
+    padding: 0;    
+    height: 30px;
+    margin: 0px;
+    display: flex;
+}
+
+nav li {
+    list-style-type: none;
+    padding: 6px 8px;
+    margin-left: 16px;    
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.subheader {
+    position: absolute;
+    top: 460px;
+    left: 64px;
+    font-size: 48px;
+    margin: 0px;
+    max-width: 100px;
+}
+
+.active {
+    color: #A4FF4A;    
+    border-bottom: 2px solid #A4FF4A;
+}
+
+header {
+    background-image: url(../Images/design3_image1.jpeg);
+    background-size: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    border-top: 112px solid #033949;
+    background-position-y: 24px;
+}
+
+.logo {    
+    height: 200px;
+    position: absolute;
+    top: 24px;
+    left: 40px;
+    border-radius: 112px;
+    box-shadow: 2px 2px 21px 0 rgba(0,0,0,0.12);
+}
+
+.info {
+    margin-left: 330px;
+    border-left: 1px solid #D8D8D8;
+    margin-bottom: 80px;
+}
+
+.paragraph {
+    padding-left: 1em;
+}
+
+.text {
+    margin-left: 80px;
+}
+
+.divisor {
+    border-top: 24px solid #A4FF4A;
+    width: 100%;
+}
+
+.info {
+    margin-top: 55px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #033949;
+    color: white;
+    font-size: 14px;
+    height: 64px;
+}
+
+.copyright {
+    margin-left: 40px;
+    margin-top: 26px;
+}
+.squarepoint {
+    list-style-type: square;
+}
+
+.section {
+    font-size: 26px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.subtitle {
+    margin: 0px;
+}
+
+.schedule {
+    width: 100%;
+    max-width: 750px;
+    margin-left: 80px
+}
+
+.locations {
+    width:100%;
+    max-width: 750px;
+    margin-left: 80px
+}
+
+.extrainfo {
+    margin-left: 80px;
+}

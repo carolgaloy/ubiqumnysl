@@ -1,0 +1,90 @@
+body {
+    font-family: "Comic Sans MS";
+    margin: 20px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+body > * {
+  flex: 1 100%;
+}
+
+.date {
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+ul {
+    padding: 0;    
+    height: 50px;
+    margin-top: 0px;
+    display: flex;
+    position: absolute;
+    top: 95px;
+    right: 45px;
+    justify-content: space-between;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px 16px;
+    width: 75px;
+    text-align: center;
+    border-style: inset;
+    border-color: black;
+    margin-right: 20px;
+    background-color: #f1f1f1;
+    box-shadow: 3px 3px black;
+}
+
+a {
+    color: blue;
+}
+
+.subheader {
+    background-color: #333;
+    color: white;
+    padding: 14px 16px;
+    margin: 0px;
+    text-align: center;
+}
+
+.active {
+    color: black;
+    font-weight: bold;
+}
+
+header {
+    background-image: url(../images/design1_image1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    background-position-y: 100px;
+    justify-content: space-between;
+}
+
+.logo {    
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 500px;
+    left: 45px;
+}
+
+.info {
+    margin-left: 250px;
+}
+
+.paragraph {
+    margin-left: 1em;
+}
+
+.button {
+    
+}
+
+.copyright {
+    color: white;
+}
