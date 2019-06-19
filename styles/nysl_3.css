@@ -110,7 +110,7 @@ table {
     margin-top: 24px;
 }
 
-th {
+.schedule th {
     font-size: 24px;
 }
 
@@ -227,4 +227,13 @@ iframe {
 
 .separator {
     border-top: 1px solid #D8D8D8;
+}
+
+input {
+    font-size: 20px;
+    margin-top: 16px;
+} 
+
+.contact, .divsection {
+    margin-top: 24px;
 }

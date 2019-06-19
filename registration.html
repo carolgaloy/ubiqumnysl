@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>NYSL Home</title>
+        <title>NYSL Registration</title>
         <link rel="stylesheet" type="text/css" href="./styles/nysl_3.css">
     </head>
     
@@ -26,24 +26,24 @@
             <div class="info">
                 <form action="show_data.html">
                     <div>
-                        <label class="halfscreen" for="first_name">Player's First Name:</label>
-                        <input type="text" name="first_name" id="first_name" required placeholder="Carolina">
+                        <label for="first_name">Player's First Name:</label>
+                        <input type="text" name="first_name" required placeholder="Carolina">
                         <label for="last_name">Last Name:</label>
-                        <input type="text" name="last_name" id="last_name" required placeholder="Garcia-Loygorri">
+                        <input type="text" name="last_name" required placeholder="Garcia-Loygorri">
                     </div>
                     <div>
                         <label for="address">Street Address:</label>
-                        <input type="text" name="address" id="address" required placeholder="Av. Generalitat 3">
+                        <input type="text" name="address" required placeholder="Av. Generalitat 3">
                     </div>
                     <div>
                         <label for="city">City:</label>
-                        <input type="text" name="city" id="city" required placeholder="Sant Just Desvern">
+                        <input type="text" name="city" required placeholder="Sant Just Desvern">
                         <label for="zip_code">Zip Code:</label>
-                        <input type="text" name="zip_code" id="zip_code" required placeholder="08960">
+                        <input type="text" name="zip_code" required placeholder="08960">
                     </div>
                     <div>
                         <label for="birthdate">Birth Date (mm/dd/yyyy):</label>
-                        <input type="text" name="birthdate" id="birthdate" required placeholder="12/28/1988">
+                        <input type="text" name="birthdate" required placeholder="12/28/1988">
                         <label for="gender">Gender:</label>
                         <input type="radio" name="gender" value="Female">Female
                         <input type="radio" name="gender" value="Male">Male
@@ -59,51 +59,64 @@
                     </div>
                     <div>
                         <label for="parent">Parent/Guardian:</label>
-                        <input type="text" name="parent" id="parent" required placeholder="Isabel Domenech">
+                        <input type="text" name="parent" required placeholder="Isabel Domenech">
                     </div>
                     <div>
                         <label for="phone">Contact Phone:</label>
-                        <input type="text" name="phone" id="phone" required placeholder="645 630 064">
+                        <input type="text" name="phone" required placeholder="645 630 064">
                         <label for="email">Contact E-mail:</label>
-                        <input type="email" name="email" id="email" required placeholder="cgl@cgl.com">
+                        <input type="email" name="email" required placeholder="cgl@cgl.com">
                     </div>
                     <div>
-                        <h5>Which elementary schools do you live near?</h5>
-                        <label for="first_school">First Closest School:</label>
-                        <div>                            
-                            <input type="radio" name="first_school" value="AJ_Katzenmaier">AJ Katzenmaier
-                            <input type="radio" name="first_school" value="Greenbay">Greenbay
-                            <input type="radio" name="first_school" value="Howart_A_Yeager">Howart A Yeager
-                            <input type="radio" name="first_school" value="Marjorie_P_Hart">Marjorie P Hart
-                            <input type="radio" name="first_school" value="North">North
-                            <input type="radio" name="first_school" value="South">South
-                        </div>
-                        <label for="second_school">Second Closest School:</label>
+                        <p class="strong">Which elementary schools do you live near?</p>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th colspan="2">First Closest School:</th>
+                                    <th colspan="2">Second Closest School:</th>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="first_school" value="aj_katzenmaier">AJ Katzenmaier</td>
+                                    <td><input type="radio" name="first_school" value="marjorie_p_hart">Marjorie P Hart</td>
+                                    <td><input type="radio" name="first_school" value="aj_katzenmaier">AJ Katzenmaier</td>
+                                    <td><input type="radio" name="first_school" value="marjorie_p_hart">Marjorie P Hart</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="first_school" value="greenbay">Greenbay</td>
+                                    <td><input type="radio" name="first_school" value="north">North</td>
+                                    <td><input type="radio" name="first_school" value="greenbay">Greenbay</td>
+                                    <td><input type="radio" name="first_school" value="north">North</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="first_school" value="howart_a_yeager">Howart A Yeager</td>
+                                    <td><input type="radio" name="first_school" value="south">South</td>
+                                    <td><input type="radio" name="first_school" value="howart_a_yeager">Howart A Yeager</td>
+                                    <td><input type="radio" name="first_school" value="south">South</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="divsection">
+                        <label for="play_positions"><span class="strong">What position(s) do you normally play?</span> (check all that apply)</label>
                         <div>
-                            <input type="radio" name="second_school" value="AJ_Katzenmaier">AJ Katzenmaier
-                            <input type="radio" name="second_school" value="Greenbay">Greenbay
-                            <input type="radio" name="second_school" value="Howart_A_Yeager">Howart A Yeager
-                            <input type="radio" name="second_school" value="Marjorie_P_Hart">Marjorie P Hart
-                            <input type="radio" name="second_school" value="North">North
-                            <input type="radio" name="second_school" value="South">South
-                        </div>
+                            <input type="checkbox" name="play_positions" value="Forward">Forward
+                            <input type="checkbox" name="play_positions" value="Defense">Defense
+                            <input type="checkbox" name="play_positions" value="Midfield">Midfield
+                            <input type="checkbox" name="play_positions" value="Goalkeeper">Goalkeeper
+                        </div>                        
                     </div>
-                    <div>
-                        <label for="play_positions">What position(s) do you normally play? (check all that apply)</label>
-                        <input type="checkbox" name="play_positions" value="Forward">Forward
-                        <input type="checkbox" name="play_positions" value="Defense">Defense
-                        <input type="checkbox" name="play_positions" value="Midfield">Midfield
-                        <input type="checkbox" name="play_positions" value="Goalkeeper">Goalkeeper
+                    <div class="divsection">
+                        <label for="desired_positions"><span class="strong">What position(s) do you want to play?</span> (check all that apply)</label>
+                        <div>
+                            <input type="checkbox" name="desired_positions" value="Forward">Forward
+                            <input type="checkbox" name="desired_positions" value="Defense">Defense
+                            <input type="checkbox" name="desired_positions" value="Midfield">Midfield
+                            <input type="checkbox" name="desired_positions" value="Goalkeeper">Goalkeeper
+                        </div>                        
                     </div>
-                    <div>
-                        <label for="desired_positions">What position(s) do you want to play? (check all that apply)</label>
-                        <input type="checkbox" name="desired_positions" value="Forward">Forward
-                        <input type="checkbox" name="desired_positions" value="Defense">Defense
-                        <input type="checkbox" name="desired_positions" value="Midfield">Midfield
-                        <input type="checkbox" name="desired_positions" value="Goalkeeper">Goalkeeper
-                    </div>
-                    <input type="checkbox" name="already_uniform" value="already_uniform">Already Have a Uniform
-                    <div>
+                    
+                    <div class="divsection">
+                        <input type="checkbox" name="already_uniform" value="already_uniform">Already Have a Uniform
                         <div>
                             <label for="jersey">Jersey Size:</label>
                             <input type="checkbox" name="jersey" value="youth_small">Youth Small
@@ -136,9 +149,9 @@
                             cancellation policy and agree to its terms.</p>
                     <div>
                         <label for="parent_name">Parent Full Name:</label>
-                        <input type="text" name="parent_name" id="parent_name" required placeholder="Isabel Domenech">
+                        <input type="text" name="parent_name" required placeholder="Isabel Domenech">
                         <label for="date">Date:</label>
-                        <input type="text" name="date" id="date" required placeholder="12/28/1988">
+                        <input type="text" name="date" required placeholder="12/28/1988">
                     </div>
                     <input type="submit" value="Submit">
                 </form>
