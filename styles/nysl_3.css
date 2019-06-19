@@ -9,6 +9,7 @@ body {
     display: flex;
     flex-flow: row wrap;
     margin: 0;
+    font-size: 20px;
 }
 
 body > * {
@@ -16,7 +17,7 @@ body > * {
 }
 
 main {
-    margin-right: 32px;
+    margin-right: 80px;
     text-align: justify;
 }
 
@@ -37,6 +38,10 @@ h2 {
     margin-left: 80px;
     margin-bottom: 0px;
     font-size: 34px;
+}
+
+h2.section, span.capital {
+    text-transform: uppercase;
 }
 
 nav {
@@ -65,6 +70,17 @@ nav li a {
     text-decoration: none;
 }
 
+main > div > ul, main > div > ol {
+    margin-left: 80px;
+}
+
+form {
+    margin-left: 80px;
+}
+
+.halfscreen {
+    width: 50%;
+}
 
 .subheader {
     position: absolute;
@@ -90,6 +106,14 @@ header {
     background-position-y: 24px;
 }
 
+table {
+    margin-top: 24px;
+}
+
+th {
+    font-size: 24px;
+}
+
 .logo {    
     height: 200px;
     position: absolute;
@@ -103,6 +127,7 @@ header {
     margin-left: 330px;
     border-left: 1px solid #D8D8D8;
     margin-bottom: 80px;
+    margin-top: 55px;
 }
 
 .paragraph {
@@ -116,10 +141,6 @@ header {
 .divisor {
     border-top: 24px solid #A4FF4A;
     width: 100%;
-}
-
-.info {
-    margin-top: 55px;
 }
 
 .footer {
@@ -143,6 +164,7 @@ header {
 
 .section {
     font-size: 26px;
+    margin-top: 40px;
 }
 
 .centered {
@@ -167,4 +189,42 @@ header {
 
 .extrainfo {
     margin-left: 80px;
+}
+
+.strong {
+    font-weight: bold;
+}
+
+.extratopmargin {
+    margin-top: 16px;
+}
+
+iframe {
+    width: 600px;
+    height: 400px;
+    margin-right: 40px;
+}
+
+.maps {
+    margin-left: 80px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.extrainfo p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.contactinfo {
+    display: flex;
+}
+
+.contactinfo > p {
+    margin-left: 80px;
+    margin-top: 0px;
+}
+
+.separator {
+    border-top: 1px solid #D8D8D8;
 }
